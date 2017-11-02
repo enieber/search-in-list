@@ -1,6 +1,6 @@
 {
   "name": "search-in-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "search word in list with name",
   "main": "search.js",
   "scripts": {
