@@ -1,0 +1,16 @@
+{
+  "name": "search-in-list",
+  "version": "1.0.0",
+  "description": "search word in list with name",
+  "main": "search.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": ["search", "list"],
+  "author": "Enieber Cunha <eniebercunha@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
