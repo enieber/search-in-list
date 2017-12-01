@@ -1,5 +1,7 @@
 # Search in list
 
+[![Build Status](https://travis-ci.org/enieber/search-in-list.svg?branch=master)](https://travis-ci.org/enieber/search-in-list)
+
 this project is one function to seach word in the list and return another list.
 
 ## How to install
