@@ -40,7 +40,7 @@ const list = new Array({
 });
 
 
-const listSearch = search(list, 'lu');
+const listSearch = search(list, 'lu', 'name');
 console.log(listSearch) //[{ id: 5, name: 'lucas louco'}]
 
 ```
