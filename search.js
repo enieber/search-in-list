@@ -1,17 +1,21 @@
-const search = (list, word) => {
-  return list.filter(item => {
-    let listWithWord = item.name.includes(word);
-    if (listWithWord) {
-      let fullName = item.name.split(' ');
-      let fisrtName = fullName[0];
-      let lastName = fullName[1];
-      if (fisrtName.charAt(0) == word.charAt(0) || lastName.charAt(0) == word.charAt(0)) {
-        return true;
+const search = (list, word, param) => {
+    word = word.toLocaleLowerCase();
+    const listWithFilter = list.filter((item) => {
+      const itemLowerCase = item[param].toLocaleLowerCase()
+      const listWithWord = itemLowerCase.includes(word);
+      if (listWithWord) {
+        const fullName = item[param].split(' ');
+        const fisrtName = fullName[0];
+
+        if (fisrtName) {
+          return true;
+        }
+        return false;
       }
-      return false;
-    }
-    return listWithWord;
-  });
+      return listWithWord;
+    });
+
+    return listWithFilter;
 };
 
 module.exports = search;

@@ -40,8 +40,36 @@ const list = new Array({
 });
 
 
-const listSearch = search(list, 'lu');
+const listSearch = search(list, 'lu', 'name');
 console.log(listSearch) //[{ id: 5, name: 'lucas louco'}]
 
+```
+
+## Example with outher params
+
+```js
+
+const search = require('./search');
+
+const list = new Array({
+  id: 1,
+  expert: 'João pinhao',
+},{
+  id: 2,
+  expert: 'João cagão',
+},{
+  id: 3,
+  expert: 'catarina marciel',
+},{
+  id: 4,
+  expert: 'carlos vegas',
+},{
+  id: 5,
+  expert: 'lucas louco',
+});
+
+
+const listSearch = search(list, 'lu', 'expert');
+console.log(listSearch) //[{ id: 5, name: 'lucas louco'}]
 ```
 
