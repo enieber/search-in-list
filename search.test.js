@@ -20,7 +20,7 @@ const list = new Array({
 test('search list client with 1 result', () => {
   const result = [{ id: 5, name: 'lucas louco'}];
 
-  expect(search(list, 'lu')).toEqual(result);
+  expect(search(list, 'lu', 'name')).toEqual(result);
 });
 
 test('search list client with 3 result', () => {
@@ -35,6 +35,6 @@ test('search list client with 3 result', () => {
 	  name: 'carlos vegas',
   }];
 
-  expect(search(list, 'ca')).toEqual(result);
+  expect(search(list, 'ca', 'name')).toEqual(result);
 })
 
