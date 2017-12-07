@@ -5,10 +5,13 @@ const search = (list, word, param) => {
       const listWithWord = itemLowerCase.includes(word);
       if (listWithWord) {
         const fullName = item[param].split(' ');
-        const fisrtName = fullName[0];
+        const firstName = fullName[0];
 
-        if (fisrtName) {
-          return true;
+        if (firstName) {
+          if (!word.includes(firstName[0])){
+            return false;
+	  }
+	  return true;
         }
         return false;
       }

@@ -23,11 +23,8 @@ test('search list client with 1 result', () => {
   expect(search(list, 'lu', 'name')).toEqual(result);
 });
 
-test('search list client with 3 result', () => {
+test('search ca list client with 2 result', () => {
   const result =[{
-	  id: 2,
-	  name: 'João cagão',
-  },{
 	  id: 3,
 	  name: 'catarina marciel',
   },{
