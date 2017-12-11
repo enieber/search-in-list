@@ -1,6 +1,7 @@
 # Search in list
 
 [![Build Status](https://travis-ci.org/enieber/search-in-list.svg?branch=master)](https://travis-ci.org/enieber/search-in-list)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fenieber%2Fsearch-in-list.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fenieber%2Fsearch-in-list?ref=badge_shield)
 
 this project is one function to seach word in the list and return another list.
 
@@ -75,3 +76,7 @@ const listSearch = search(list, 'lu', 'expert');
 console.log(listSearch) //[{ id: 5, name: 'lucas louco'}]
 ```
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fenieber%2Fsearch-in-list.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fenieber%2Fsearch-in-list?ref=badge_large)
